@@ -50,7 +50,7 @@ const Careers = () => {
             <h4 style={{ color: 'var(--secondary)', textTransform: 'uppercase', letterSpacing: '3px', marginBottom: '20px', fontSize: '14px' }}>Careers</h4>
             <h1 style={{ fontSize: '64px', marginBottom: '30px' }}>Build Your Legal Career with Us</h1>
             <p style={{ fontSize: '18px', color: 'var(--text-secondary)', maxWidth: '800px', lineHeight: '1.6' }}>
-              At ARJ Law Firm, we nurture young legal talent by offering career-defining opportunities and professional development. We welcome professionals from law, business, IT, and related fields to join our dynamic legal team.
+              At ARJ Law Firm, we nurture young legal talent by offering career-defining opportunities, mentorship, and professional development. We welcome professionals from law, business, IT, and related fields to join our dynamic legal team.
             </p>
           </motion.div>
         </div>
@@ -69,10 +69,20 @@ const Careers = () => {
             >
               <h2 style={{ fontSize: '42px', marginBottom: '30px' }}>Excellence, Commitment & Growth</h2>
               <p style={{ color: 'var(--text-secondary)', marginBottom: '24px', lineHeight: '1.8' }}>
-                Our doors are always open to all the professionals and enthusiasts who have a diverse skill set. Excellence, knowledge, integrity, and trust are our bedrock. We look forward to striking a balance between meeting professional ethics and making memories along the way.
+                Our doors are always open to all the professionals and enthusiasts who have a diverse skill set in law and related subjects such as information technology, business development, and others.
               </p>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginTop: '40px' }}>
-                {values.map((val, i) => (
+              <p style={{ color: 'var(--text-secondary)', marginBottom: '32px', lineHeight: '1.8', fontWeight: 600 }}>
+                Excellence, commitment knowledge, integrity, respect, openness, curiosity to learn, teamwork, and trust are our bedrock and this is how we approach our profession.
+              </p>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginTop: '20px' }}>
+                {[
+                  'Integrity & Trust',
+                  'Excellence',
+                  'Curiosity to Learn',
+                  'Teamwork',
+                  'Openness',
+                  'Respect'
+                ].map((val, i) => (
                   <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '15px' }}>
                     <CheckCircle size={18} style={{ color: 'var(--secondary)' }} />
                     <span style={{ color: 'var(--text-primary)' }}>{val}</span>
@@ -91,7 +101,7 @@ const Careers = () => {
                 <Star size={120} style={{ position: 'absolute', top: '-30px', right: '-30px', color: 'var(--secondary)', opacity: 0.05 }} />
                 <h3 style={{ fontSize: '24px', marginBottom: '24px', color: 'var(--secondary)' }}>Professional Development</h3>
                 <p style={{ color: 'var(--text-secondary)', lineHeight: '1.8', fontStyle: 'italic' }}>
-                  "Joining ARJ Law Firm is the beginning to an exciting journey towards your professional excellence. All our members including lawyers, team members, and management have easy access to our ideas, learning, and development initiatives."
+                  "Joining ARJ Law Firm is the beginning to an exciting journey towards your professional excellence. We celebrate events and social gatherings with as much enthusiasm as we treat our clientele and deadlines, striking a balance between professional ethics and making memories."
                 </p>
               </div>
             </motion.div>
@@ -104,10 +114,15 @@ const Careers = () => {
         <div className="container">
           <div style={{ textAlign: 'left', marginBottom: '80px' }}>
             <h2 style={{ fontSize: '48px', marginBottom: '20px' }}>Why Nurture Your Talent Here?</h2>
-            <p style={{ color: 'var(--text-secondary)', maxWidth: '600px' }}>We provide the right platform for naive and aspiring talent to grow alongside senior industry professionals.</p>
+            <p style={{ color: 'var(--text-secondary)', maxWidth: '600px' }}>We provide the right platform for young and aspiring talent to grow alongside senior industry professionals.</p>
           </div>
           <div className="grid grid-cols-4" style={{ gap: '30px' }}>
-            {benefits.map((benefit, index) => (
+            {[
+              { title: 'Continuous Learning', icon: <GraduationCap size={24} />, desc: 'We take pride in our continuous learning programs, committed to shaping careers through development.' },
+              { title: 'High-Profile Case Exposure', icon: <Briefcase size={24} />, desc: 'Exposure to landmark Supreme Court rulings and complex cases for domestic and international clients.' },
+              { title: 'Social Growth & Wellbeing', icon: <Heart size={24} />, desc: 'Combining professional excellence with social gatherings and a inclusive work culture.' },
+              { title: 'Diverse Opportunity', icon: <Zap size={24} />, desc: 'Open to law enthusiasts and professionals from IT, business development, and related fields.' }
+            ].map((benefit, index) => (
               <motion.div
                 key={index}
                 className="glass-card"

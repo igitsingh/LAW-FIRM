@@ -99,7 +99,7 @@ const Home = () => {
                 ARJ Law Firm is a premier full-service law firm based in Indore, Madhya Pradesh, dedicated to providing comprehensive legal solutions across various sectors. With a client-focused approach, we offer expert advisory, regulatory, transactional, and dispute resolution services to individuals, businesses, financial institutions, and public sector undertakings (PSUs) nationwide.
               </p>
               <p style={{ color: 'var(--text-secondary)', marginBottom: '32px', lineHeight: '1.8' }}>
-                The mission behind ARJ Law Firm was to bring the service of clients to a sharper focus and to further provide them with commercially viable legal advice. We distinguish ourselves with our level of partner involvement in all kinds of transactions. We believe in high degree of partner availability and paying attention to detail.
+                Our mission is to deliver strategic, result-driven legal solutions with a commitment to excellence, integrity, and professionalism. We believe in partner-led service, attention to detail, and a client-first approach, making us a trusted legal advisor for businesses and individuals alike.
               </p>
               <div style={{ display: 'flex', gap: '32px' }}>
                 <div>
@@ -122,12 +122,19 @@ const Home = () => {
             >
               <h3 style={{ fontSize: '24px', marginBottom: '30px', color: 'var(--secondary)' }}>Our Commitment</h3>
               <p style={{ color: 'var(--text-secondary)', marginBottom: '30px', lineHeight: '1.7' }}>
-                "Our vision to be the finest law firm of the country is strengthened by our core values - exceeding client expectations, working with integrity, and following the path of constant learning. We encourage entrepreneurship so as to enable our people to fully realize their potential."
+                "Our vision to be the finest law firm of the country is supported and strengthened by our core values - exceeding the expectations of the client, working everything with integrity, believing that people matter, and following the path of constant learning."
               </p>
               <div style={{ borderTop: '1px solid var(--border-glass)', paddingTop: '30px' }}>
                 <p style={{ fontSize: '14px', color: 'var(--text-primary)', marginBottom: '10px' }}><strong>Founding Values:</strong></p>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                  {['Client Success', 'Integrity', 'Teamwork', 'Constant Learning'].map((val, i) => (
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px' }}>
+                  {[
+                    'Client Focus', 
+                    'Integrity', 
+                    'Professionalism', 
+                    'Constant Learning',
+                    'Teamwork',
+                    'Diversity'
+                  ].map((val, i) => (
                     <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '13px', color: 'var(--text-secondary)' }}>
                       <CheckCircle size={14} style={{ color: 'var(--secondary)' }} /> {val}
                     </div>
@@ -146,8 +153,14 @@ const Home = () => {
             <h4 style={{ color: 'var(--secondary)', textTransform: 'uppercase', letterSpacing: '3px', marginBottom: '20px', fontSize: '14px' }}>The ARJ Advantage</h4>
             <h2 style={{ fontSize: '48px', marginBottom: '20px' }}>Why Choose ARJ Law Firm?</h2>
           </div>
-          <div className="grid grid-cols-5" style={{ gap: '30px' }}>
-            {whyChooseUs.map((item, index) => (
+          <div className="grid grid-cols-5" style={{ gap: '20px' }}>
+            {[
+              { title: 'Experienced Professionals', icon: <Award size={24} />, desc: 'Highly skilled advocates with expertise across multiple legal domains.' },
+              { title: 'Personalized Solutions', icon: <UserCheck size={24} />, desc: 'Tailored legal strategies to meet individual and corporate needs.' },
+              { title: 'Client-Centric Approach', icon: <Star size={24} />, desc: 'Prioritizing interests, ensuring transparency and efficiency.' },
+              { title: 'Proven Track Record', icon: <Activity size={24} />, desc: 'Successfully represented clients in high-stakes litigation and arbitration.' },
+              { title: 'Industry Recognition', icon: <Globe size={24} />, desc: 'Recognized for professionalism and success in complex matters.' }
+            ].map((item, index) => (
               <motion.div 
                 key={index}
                 className="glass-card"
@@ -156,11 +169,11 @@ const Home = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                style={{ padding: '30px', textAlign: 'left' }}
+                style={{ padding: '24px', textAlign: 'left' }}
               >
-                <div style={{ color: 'var(--secondary)', marginBottom: '20px' }}>{item.icon}</div>
-                <h3 style={{ fontSize: '18px', marginBottom: '15px', lineHeight: '1.3' }}>{item.title}</h3>
-                <p style={{ color: 'var(--text-secondary)', fontSize: '13px', lineHeight: '1.6' }}>{item.desc}</p>
+                <div style={{ color: 'var(--secondary)', marginBottom: '16px' }}>{item.icon}</div>
+                <h3 style={{ fontSize: '16px', marginBottom: '12px', lineHeight: '1.3' }}>{item.title}</h3>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '12px', lineHeight: '1.6' }}>{item.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -235,21 +248,21 @@ const Home = () => {
           <div className="grid grid-cols-2" style={{ gap: '100px' }}>
             <div style={{ textAlign: 'left' }}>
               <h4 style={{ color: 'var(--secondary)', textTransform: 'uppercase', letterSpacing: '3px', marginBottom: '20px', fontSize: '14px' }}>Contact</h4>
-              <h2 style={{ fontSize: '42px', marginBottom: '30px' }}>Schedule a Consultation</h2>
-              <p style={{ color: 'var(--text-secondary)', marginBottom: '40px', lineHeight: '1.8' }}>Our experts are ready to assist you with strategic legal advice. Connect with us at our head office or through our primary channels.</p>
+              <h2 style={{ fontSize: '42px', marginBottom: '30px' }}>Schedule a Consultation Today!</h2>
+              <p style={{ color: 'var(--text-secondary)', marginBottom: '40px', lineHeight: '1.8' }}>Our experts are ready to assist you with strategic, result-driven legal solutions. Reach out to us for expert advisory and representation.</p>
               
               <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                 <div style={{ display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
                   <MapPin style={{ color: 'var(--secondary)' }} />
                   <div>
-                    <h4 style={{ color: 'var(--text-primary)', marginBottom: '4px' }}>Head Office</h4>
+                    <h4 style={{ color: 'var(--text-primary)', marginBottom: '4px' }}>Indore Campus</h4>
                     <p style={{ color: 'var(--text-secondary)', fontSize: '14px' }}>Advocate Chamber Number 59, High Court Campus, Indore</p>
                   </div>
                 </div>
                 <div style={{ display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
                   <Phone style={{ color: 'var(--secondary)' }} />
                   <div>
-                    <h4 style={{ color: 'var(--text-primary)', marginBottom: '4px' }}>Contact Lines</h4>
+                    <h4 style={{ color: 'var(--text-primary)', marginBottom: '4px' }}>Phone Support</h4>
                     <p style={{ color: 'var(--text-secondary)', fontSize: '14px' }}>+91 99770 06709 | +91 97540 33928</p>
                     <p style={{ color: 'var(--text-secondary)', fontSize: '14px' }}>0731-3585243 (Landline)</p>
                   </div>
@@ -278,6 +291,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+
 
       {/* Final CTA */}
       <section className="section" style={{ background: 'var(--secondary)', color: 'var(--primary)', textAlign: 'left' }}>

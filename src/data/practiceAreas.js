@@ -1,4 +1,4 @@
-import { Gavel, Users, Shield, Briefcase, Home, CheckCircle, Building } from 'lucide-react';
+import { Gavel, Users, Shield, Briefcase, Home, CheckCircle, Building, Zap } from 'lucide-react';
 
 export const practiceAreas = [
   {
@@ -8,13 +8,12 @@ export const practiceAreas = [
     shortDesc: 'Our litigation team represents clients across all levels of the judiciary, including the Supreme Court of India, High Courts, District Courts, Tribunals, and Arbitration Panels.',
     longDesc: 'We are a leading law firm handling matters related to litigation throughout India. Over the course of time, we have entertained a vast experience in defending positions before all the courts of the country, including the Supreme Court of India, lower courts as well as judicial and quasi-judicial bodies. Our lawyers are the members of the Supreme Court Bar Association, High Court Bar Association as well as other Association of Bars.',
     services: [
-      'Civil and commercial disputes',
-      'Criminal defense',
-      'Consumer and service-related cases',
-      'Public Interest Litigation (PIL)',
-      'Corporate and financial disputes',
-      'Labor and employment matters',
-      'Money suits and suits of various other nature'
+      'Consumer and service-related disputes',
+      'Civil matters including money suits and suits of various other nature',
+      'Corporate and commercial disputes',
+      'Labor and industrial disputes',
+      'Criminal Cases',
+      'Public Interest Litigation (PIL)'
     ],
     expertise: 'Our vision to be the finest law firm of the country is supported and strengthened by our core values - exceeding the expectations of the client, working everything with integrity, and following the path of constant learning.'
   },
@@ -22,93 +21,101 @@ export const practiceAreas = [
     slug: 'arbitration-and-conciliation',
     title: 'Arbitration & Conciliation',
     icon: 'Users',
-    shortDesc: 'Alternative Dispute Resolution (ADR) offering efficient arbitration and mediation services.',
-    longDesc: 'We have consistently maintained a strong mark in Alternate Dispute Resolution Processes. Our team has successfully developed and sustained a diversified clientele which includes both individuals as well as companies (local and multinational). We offer efficient arbitration and mediation services to resolve disputes without prolonged litigation.',
+    shortDesc: 'Alternate Dispute Resolution Processes for domestic and multinational clients.',
+    longDesc: 'We have consistently maintained a strong mark in Alternate Dispute Resolution Processes. Our team has successfully developed and sustained a diversified clientage which includes both individuals as well as companies (local and multinational).',
     services: [
       'Domestic & International Arbitration',
       'Mediation and Settlement Negotiations',
-      'Appointment of Arbitrators',
-      'Enforcement of Arbitral Awards',
-      'Conciliation Proceedings'
+      'Conciliation Proceedings',
+      'Dispute Resolution without prolonged litigation'
     ],
-    expertise: 'We distinguish ourselves with our level of partner involvement in all kinds of deals and transactions during all the times, extending commercial solutions based on intensive research.'
+    expertise: 'We extend commercial solutions which are based on intensive and detailed legal research, moving beyond conventional litigation.'
   },
   {
     slug: 'banking-and-finance-law',
-    title: 'Banking & Finance Law',
+    title: 'Banking & Finance',
     icon: 'Shield',
-    shortDesc: 'Legal guidance on corporate and retail banking regulations, loan structuring, and debt recovery.',
-    longDesc: 'Our expertise in the field of Banking and Finance covers an array of services relating to regulatory issues. We advise an extensive clientele that includes banks, financial institutions, and promoter groups both locally and nationally.',
+    shortDesc: 'Expertise in Structured Finance, Acquisition, Leverage Finance, and regulatory issues.',
+    longDesc: 'Our expertise in the field of Banking and Finance covers an array of services such as Structured Finance, Acquisition and Leverage Finance, Loans, External Commercial Borrowings, Securitization of Assets, Restructuring, and various other regulatory issues relating to the area.',
     services: [
-      'Structured Finance',
+      'Structured Finance & Loans',
       'Acquisition and Leverage Finance',
-      'Loans and External Commercial Borrowings',
-      'Securitization of Assets',
-      'Restructuring and Debt Recovery',
+      'External Commercial Borrowings',
+      'Securitization of Assets & Restructuring',
       'Banking Compliance and Regulatory Matters'
     ],
-    expertise: 'Our lawyers have successfully represented clients in high-stakes litigation, arbitration, and corporate transactions within the banking sector.'
+    expertise: 'Our learned counsels provide commercial solutions and innovative legal remedies for financial institutions and corporations.'
   },
   {
     slug: 'corporate-and-commercial-law',
-    title: 'Corporate & Commercial Law',
+    title: 'Corporate & Commercial',
     icon: 'Briefcase',
-    shortDesc: 'Assisting businesses with M&A, contract drafting, and regulatory approvals.',
-    longDesc: 'Our learned counsels advise clients on issues such as mergers, acquisitions, collaborations, and restricting business. We assist with statutory compliance audits, government approvals, and clearance for businesses ranging from local companies to national promoter groups.',
+    shortDesc: 'Advisory on mergers, acquisitions, collaborators, and statutory compliance audits.',
+    longDesc: 'Our learned counsels advise all the clients on the issues such as mergers, acquisitions, collaborations, restricting business, statutory compliance audit government approvals and clearance.',
     services: [
-      'Business incorporations and structuring',
-      'Mergers & acquisitions (M&A)',
-      'Contract drafting and negotiations',
-      'Compliance and regulatory approvals',
-      'Statutory compliance audit',
-      'Corporate Governance Advisory'
+      'Mergers & Acquisitions (M&A)',
+      'Business Collaborations & Restructuring',
+      'Statutory Compliance Audits',
+      'Government Approvals and Clearances',
+      'Contract Drafting & Negotiations'
     ],
-    expertise: 'We invest our time in understanding the needs and requirements of our clients’ businesses to provide commercially driven and innovative legal solutions.'
+    expertise: 'We prioritize partner involvement and pay close attention to detail to provide commercially oriented legal advice.'
+  },
+  {
+    slug: 'power-and-energy',
+    title: 'Power & Energy',
+    icon: 'Zap',
+    shortDesc: 'Drafting and vetting power purchase agreements and guidance for the power sector.',
+    longDesc: 'We advise various organization in the power sector and provide varied services to them which includes drafting and vetting of power purchase agreements in tandem with all the guidelines and regulations from the regulatory commission, adjudication of disputes before any authority, etc.',
+    services: [
+      'Power Purchase Agreements (PPAs)',
+      'Regulatory Commission Guidelines & Adherence',
+      'Adjudication of Disputes before Authorities',
+      'Energy Sector Advisory'
+    ],
+    expertise: 'Energy, enthusiasm as well as the drive for excellence are the elements that attract the way we work.'
+  },
+  {
+    slug: 'industry-and-labor',
+    title: 'Industry & Labor',
+    icon: 'CheckCircle',
+    shortDesc: 'Guidance on industrial disputes, wage rules, and contract labor laws.',
+    longDesc: 'We guide all our clients via industrial dispute legislation, wage rules as well as contract labor laws. We make a regular appearance before the Labor Courts and other courts of India regarding the issues related to this particular area.',
+    services: [
+      'Industrial Dispute Legislation Advisory',
+      'Wage Rules & Compliance',
+      'Contract Labor Laws',
+      'Representation before Labor Courts'
+    ],
+    expertise: 'We are committed to developing and maintaining strong client relationships and investing in deep technical knowledge.'
+  },
+  {
+    slug: 'public-infrastructure-contracts',
+    title: 'Public Infrastructure Contracts',
+    icon: 'Building',
+    shortDesc: 'Drafting and vetting agreements for roads, toll collections, and infrastructure matters.',
+    longDesc: 'We draft and vet agreements routinely in regard to the development and construction of roads, toll collections, etc. We have associated ourselves with a multitude of infrastructure development matters as well as with the areas of practice including advice, assessment and sturdy, preparation of the concerned project, viability documentation, report, government and departmental clearance, license, etc.',
+    services: [
+      'Road Construction & Development Agreements',
+      'Toll Collection Agreements & Assessment',
+      'Government & Departmental Clearances',
+      'Project Viability Documentation & Licenses'
+    ],
+    expertise: 'Our vision for social responsibility aims to assist in the formulation of meaningful policies and legal frameworks for regional development.'
   },
   {
     slug: 'real-estate-and-property-law',
-    title: 'Real Estate & Property Law',
+    title: 'Real Estate',
     icon: 'Home',
-    shortDesc: 'End-to-end legal solutions for property transactions, title verification, and land acquisition.',
-    longDesc: 'We provide a comprehensive service in all aspects related to property and real estate transactions. This includes commercial, industrial as well as residential property. Advocate Paresh S. Joshi brings unmatched experience in conducting land due diligence and title verification.',
+    shortDesc: 'Comprehensive services in property transactions, title reports, leasing, and construction.',
+    longDesc: 'We provide a comprehensive service in all the aspects related to property and real estate transactions which include purchase sale, report on title, leasing tendency, licensing, construction and development, mortgage and litigation in respect of commercial, industrial as well as residential property.',
     services: [
-      'Property transactions – sale, lease, and mortgage',
-      'Land acquisition and title verification',
-      'Construction and infrastructure contracts',
-      'Leasing tendency and licensing',
-      'Mortgage and partition litigation'
+      'Purchase, Sale & Leasing Transactions',
+      'Title Reports & Due Diligence',
+      'Construction & Development Contracts',
+      'Mortgage & Real Estate Litigation'
     ],
-    expertise: 'With years of advisory experience for infrastructure majors and real estate companies, we ensure seamless legal execution of complex property matters.'
-  },
-  {
-    slug: 'employment-and-labor-law',
-    title: 'Employment & Labor Law',
-    icon: 'CheckCircle',
-    shortDesc: 'Guidance on industrial disputes, wage rules, and workplace compliance.',
-    longDesc: 'We guide all our clients via industrial dispute legislation, wage rules as well as contract labor laws. We make a regular appearance before the Labor Courts and other courts of India regarding issues related to this area. We represent clients in employment disputes and ensure adherence to Indian labor laws.',
-    services: [
-      'Industrial dispute legislation guidance',
-      'Wage rules and contract labor laws',
-      'Workplace regulations and compliance',
-      'Adherence to Indian labor laws',
-      'Industrial policy advisory'
-    ],
-    expertise: 'Our commitment is towards exceeding the expectations of the client and working with integrity to serve our clients effectively.'
-  },
-  {
-    slug: 'energy-and-infrastructure-law',
-    title: 'Energy & Infrastructure Law',
-    icon: 'Building',
-    shortDesc: 'Specialized legal services for power sector agreements and infrastructure development.',
-    longDesc: 'We advise various organizations in the power sector and provide services including drafting and vetting power purchase agreements in tandem with guidelines and regulations. We are associated with a multitude of infrastructure development matters including roads and toll collections.',
-    services: [
-      'Power Purchase Agreements (PPAs)',
-      'Infrastructure project contracts',
-      'Government licensing and compliance',
-      'Road development and toll collection agreements',
-      'Regulatory commission guideline adherence',
-      'Viability documentation and reports'
-    ],
-    expertise: 'Energy, enthusiasm, and the drive for excellence are the elements that attract the way we work in high-profile infrastructure projects.'
+    expertise: 'Advocate Paresh S. Joshi brings unmatched experience in conducting land due diligence and title verification for infrastructure and real estate majors.'
   }
 ];
+

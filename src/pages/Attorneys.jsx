@@ -11,19 +11,19 @@ const Attorneys = () => {
       qualifications: 'B.Com, LLB (Hons), LLM',
       specialization: 'Corporate Law, Real Estate, and Litigation',
       bio: 'Advocate Paresh S. Joshi is a senior legal professional with over 20 years of experience in litigation and legal consultancy. His in-depth knowledge spans diverse sectors including Infrastructure, Real Estate, Petroleum, Insurance, and Finance. As a seasoned advocate in Indore and a trusted legal advisor to several top-tier companies, Paresh specializes in land acquisition, arbitration, consumer disputes, and civil and constitutional matters.',
-      image: 'https://images.unsplash.com/photo-1556157303-97931c8413b8?auto=format&fit=crop&q=80&w=800',
+      image: '/paresh-joshi.jpeg',
       expertise: ['Land Acquisition', 'Civil Litigation', 'Corporate Advisory', 'Arbitration'],
-      achievements: 'Strategic legal services helping companies reduce litigation risks and ensure compliance across complex legal landscapes.'
+      achievements: 'Two decades of legal excellence across Infrastructure, Real Estate, and Finance sectors.'
     },
     {
       name: 'Mayank Kshirsagar',
       title: 'Senior Advocate (AOR Supreme Court)',
       qualifications: 'B.Com, LLB (Hons)',
       specialization: 'Banking Law, Arbitration, and Constitutional Matters',
-      bio: 'An expert in banking laws and constitutional matters, Mayank represents the firm’s interests at the highest levels of the Indian judiciary. His precision in arbitration and deep understanding of regulatory protocols make him a key strategist for complex financial disputes and public sector undertakings.',
+      bio: 'An expert in banking laws, arbitration, and constitutional matters, Mayank represents the firm’s interests at the highest levels of the Indian judiciary, including the Supreme Court of India. His precision in arbitration and deep understanding of regulatory protocols make him a key strategist for complex financial disputes and public sector undertakings (PSUs).',
       image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800',
       expertise: ['Banking Regulations', 'Supreme Court Practice', 'Arbitration', 'Constitutional Law'],
-      achievements: 'Member of the Supreme Court Bar Association and expert in AOR protocols for high-stakes constitutional litigation.'
+      achievements: 'Advocate on Record (AOR) at the Supreme Court of India with expertise in high-stakes arbitration.'
     },
     {
       name: 'Rashmi Joshi',
@@ -31,7 +31,7 @@ const Attorneys = () => {
       qualifications: 'B.A. LLB (Hons)',
       specialization: 'Civil Litigation, Family Law, and Commercial Disputes',
       bio: 'Rashmi Joshi is an advocate known for her meticulous approach to civil and family law matters. She provides strategic counsel on household legal issues, property disputes, and commercial litigation, ensuring that clients receive holistic legal support tailored to their specific needs.',
-      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800',
+      image: '/rashmi-joshi.jpeg',
       expertise: ['Family Law', 'Property Disputes', 'Civil Procedure', 'Legal Research'],
       achievements: 'Dedicated to achieving result-oriented solutions in sensitive family and civil litigation cases.'
     }
