@@ -79,7 +79,7 @@ const Attorneys = () => {
                     borderColor: 'var(--secondary)'
                   }}
                 >
-                  <img src={attorney.image} alt={attorney.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  <img src={attorney.image} alt={attorney.name} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }} />
                   <div style={{ position: 'absolute', bottom: '40px', left: '40px' }}>
                     <div style={{ background: 'var(--secondary)', color: 'var(--primary)', padding: '12px 24px', fontWeight: 800, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '2px' }}>
                       Senior Associate
