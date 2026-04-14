@@ -88,9 +88,9 @@ const Navbar = () => {
 
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '15px 0' }}>
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-          <img src="https://lawyer-co.com/wp-content/uploads/2017/04/logo_lawyer.png" alt="ARJ Law Firm" style={{ height: '32px' }} onError={(e) => { e.target.style.display='none'; e.target.nextSibling.style.display='block'; }} />
-          <div style={{ display: 'none', flexDirection: 'column' }}>
-            <span style={{ fontSize: '22px', fontWeight: 800, color: '#333', letterSpacing: '1px' }}>LAWYER<span style={{ color: '#B20000' }}>&CO</span></span>
+          <div style={{ background: '#B20000', color: 'white', padding: '6px 12px', fontWeight: 900, borderRadius: '4px', fontSize: '18px', letterSpacing: '1px' }}>ARJ</div>
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <span style={{ fontSize: '20px', fontWeight: 800, color: '#010812', letterSpacing: '0.5px' }}>LAW FIRM</span>
           </div>
         </Link>
 
